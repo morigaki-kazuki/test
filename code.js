@@ -1,1 +1,3 @@
-console.log("good morning");
+document.getElementById("baz").addEventListener("click",function(){
+    alert('aaaaaa');
+})
