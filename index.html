@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>test</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="code.js"></script>
-    </head>
-    <body>
-        <div id="foo">
-            aiueo
-        </div>
-        <div id="bar">
-            aiueo
-        </div>
-        <button id="baz">button</button>
-    </body>
+        <title>Simple Map</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+        <script src="./index.js"></script>
+      </head>
+      <body>
+        <div id="map"></div>
+    
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1f5Z-Rqkh3z8HMuhd_sszHw2N1-RYBfk&callback=initMap&v=weekly"
+      async
+    ></script>
+      </body>
 </html>
+
